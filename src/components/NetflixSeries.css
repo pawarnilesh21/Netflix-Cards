@@ -1,0 +1,88 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Series List */
+.series-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Series Card */
+.series-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 15px;
+}
+
+.series-card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Series Image */
+.series-image-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.series-image {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Typography */
+.series-name,
+.series-rating {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    color: #333;
+}
+
+.series-summary,
+.series-genre,
+.series-cast {
+    font-size: 0.9rem;
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Watch Button */
+.watch-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.watch-button:hover {
+    background-color: #0056b3;
+}
+
+/* Animation: Fade-In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.series-list {
+    animation: fadeIn 1s ease;
+}
